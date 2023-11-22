@@ -1,0 +1,10 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Hugo's Resume"
+
+[Params]
+    Name = "Hugo Jobless"
+    Phone = "123-456-7890"
+    EMail = "jake@su.edu"
+    LinkedIn = "linkedin.com/in/jake"
+    GitHub = "github.com/jake"
