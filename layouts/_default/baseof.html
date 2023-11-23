@@ -1,80 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 
 <head>
     <title>{{ .Site.Title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cmu-serif" type="text/css" />
-
-    <style type="text/css">
-        body {
-            font-family: 'CMUSerifRoman', serif;
-            font-size: 13pt;
-            line-height: 120%;
-            background: white;
-            display: block;
-            margin: 1cm auto;
-            box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
-            min-width: 21cm;
-            width: 21cm;
-            height: 29.7cm;
-            padding: 1.2cm;
-            box-sizing: border-box;
-        }
-
-        ul {
-            margin: 0;
-            padding-left: 50px;
-            list-style-type: disc;
-            font-size: small;
-        }
-
-        ul.skills {
-            padding-left: 0;
-            margin-left: 2.5%;
-        }
-
-        a {
-            color: black;
-        }
-
-        h1,
-        h2,
-        h3 {
-            margin-top: 5px;
-            margin-bottom: 0;
-            font-weight: normal;
-        }
-
-        h1.name {
-            font-size: xx-large;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        hr {
-            margin-top: 0;
-            margin-bottom: 5px;
-        }
-
-        em {
-            font-size: small;
-        }
-
-        table {
-            margin-left: 2.5%;
-            width: 95%;
-        }
-
-        @media print {
-            body {
-                margin: 0;
-                padding: 0;
-                box-shadow: 0 0 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" media="all" href="https://fontlibrary.org/face/cmu-serif" type="text/css" />
+    {{ partial "head/style.html" . }}
 </head>
 
 <body>

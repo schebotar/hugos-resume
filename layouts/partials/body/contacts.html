@@ -1,0 +1,17 @@
+<div style="text-align: center;">
+    <h1 class="name">{{ .Site.Params.Name }}</h1>
+    <div style="font-size: small;">
+        {{ with .Site.Params.Phone }}
+        <a href="tel:{{ . }}">{{ . }}</a><span> |</span>
+        {{ end }}
+        {{ with .Site.Params.Email }}
+        <a href="mailto:{{ . }}">{{ . }}</a><span> |</span>
+        {{ end }}
+        {{ with .Site.Params.LinkedIn }}
+        <a href="https://{{ . }}">{{ . }}</a><span> |</span>
+        {{ end }}
+        {{ with .Site.Params.GitHub }}
+        <a href="https://{{ . }}">{{ . }}</a>
+        {{ end }}
+    </div>
+</div>
