@@ -1,6 +1,8 @@
 ---
 title: Gitlytics
 tags: ["Python", "Flask", "React", "PostgreSQL", "Docker"]
+start_date: 2020-06-01
+end_date : 
 ---
 - Developed a full-stack web application using with Flask serving a REST API with React as the frontend
 - Implemented GitHub OAuth to get data from user’s repositories

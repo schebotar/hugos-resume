@@ -8,7 +8,10 @@
             <td><strong>{{ .Title }} </strong><span>|</span>
                 <em>{{ range $i, $e := .Params.tags -}}{{- if $i -}}, {{ end -}}{{ . }}{{- end -}}</em>
             </td>
-            <td style="text-align: right;">June 2020 – Present</td>
+            <td style="text-align: right;">
+                {{ with .Params.start_date }}{{ time.Format "Jan 2006" . }}{{ end }} – 
+                {{ with .Params.end_date }}{{ time.Format "Jan 2006" . }}{{ else }}{{ "Present" }}{{ end }}
+            </td>
         </tr>
     </tbody>
 </table>
