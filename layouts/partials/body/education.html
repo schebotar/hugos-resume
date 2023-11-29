@@ -1,23 +1,21 @@
+{{ with .Site.GetPage "/education" }}
 <h3>Education</h3>
 <table>
     <tbody>
+        {{ range sort (.Pages) "Params.end_date" "desc" }}
         <tr>
-            <td><strong>Southwestern University</strong></td>
-            <td style="text-align: right;">Georgetown, TX</td>
+            <td><strong>{{ .Title }}</strong></td>
+            <td style="text-align: right;">{{ with .Params.location}}{{ . }}{{ end }}</td>
         </tr>
         <tr>
-            <td><em>Bachelor of Arts in Computer Science, Minor in
-                    Business</em>
+            <td><em>{{ with .Params.degree}}{{ . }}{{ end }}</em>
             </td>
-            <td style="text-align: right;"><em>Aug. 2018 – May 2021</em></td>
+            <td style="text-align: right;"><em>
+                    {{ with .Params.start_date }}{{ time.Format "Jan 2006" . }}{{ end }} –
+                    {{ with .Params.end_date }}{{ time.Format "Jan 2006" . }}{{ else }}{{ "Present" }}{{ end }}</em>
+            </td>
         </tr>
-        <tr>
-            <td><strong>Blinn College</strong></td>
-            <td style="text-align: right;">Bryan, TX</td>
-        </tr>
-        <tr>
-            <td><em>Associate’s in Liberal Arts</em></td>
-            <td style="text-align: right;"><em>Aug. 2014 – May 2018</em></td>
-        </tr>
+        {{ end }}
     </tbody>
 </table>
+{{ end }}
