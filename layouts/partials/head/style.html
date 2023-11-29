@@ -1,7 +1,7 @@
 <style type="text/css">
     @font-face {
         font-family: 'Computer Modern Serif';
-        src: url('font/cmunrm.woff') format('woff'),;
+        src: url('font/cmunrm.woff') format('woff');
         font-weight: normal;
         font-style: normal;
         font-display: swap;
@@ -36,15 +36,16 @@
         font-family: 'Computer Modern Serif', serif;
         font-size: 13pt;
         line-height: 100%;
+    }
+
+    page {
         background: white;
         display: block;
-        margin: 1cm auto;
+        margin: 0 auto;
         box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
-        min-width: 21cm;
         width: 21cm;
         height: 29.7cm;
         padding: 1.2cm;
-        box-sizing: border-box;
     }
 
     ul {
@@ -68,23 +69,19 @@
     h2,
     h3 {
         margin-top: 5px;
-        margin-bottom: 0;
+        margin-bottom: 5px;
         font-weight: normal;
+    }
+
+    h3 {
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
     }
 
     h1.name {
         font-size: xx-large;
         font-weight: bold;
         margin-bottom: 5px;
-    }
-
-    hr {
-        margin-top: 0;
-        margin-bottom: 5px;
-        border: none;
-        height: 1px;
-        color: black;
-        background-color: black
     }
 
     em {
@@ -97,10 +94,12 @@
     }
 
     @media print {
-        body {
+        body,
+        page {
+            background: white;
             margin: 0;
+            box-shadow: 0 0 0 white;
             padding: 0;
-            box-shadow: 0 0 0;
         }
     }
 </style>
