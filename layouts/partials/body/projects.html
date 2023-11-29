@@ -1,6 +1,6 @@
 {{ with .Site.GetPage "/projects" }}
 <h3>Projects</h3>
-{{ range .Pages }}
+{{ range sort (.Pages) "Params.start_date" "desc" }}
 <table>
     <tbody>
         <tr>
