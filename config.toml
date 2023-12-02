@@ -1,6 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Hugo's Resume"
+disableKinds = ["taxonomy", "taxonomyTerm", "category", "sitemap", "RSS", "404", "robotsTXT"]
 
 [Params]
     Name = "Hugo Jobless"
