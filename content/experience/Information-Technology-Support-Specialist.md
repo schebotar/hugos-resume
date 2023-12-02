@@ -1,5 +1,6 @@
 ---
 title: Information Technology Support Specialist
+weight: 2
 workplace: Southwestern University
 location: Georgetown, TX
 start_date: 2018-09-01

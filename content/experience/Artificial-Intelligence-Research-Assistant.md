@@ -1,5 +1,6 @@
 ---
 title: Artificial Intelligence Research Assistant
+weight: 3
 workplace: Southwestern University
 location: Georgetown, TX
 start_date: 2019-05-01
