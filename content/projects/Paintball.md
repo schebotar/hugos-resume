@@ -1,5 +1,6 @@
 ---
 title: Simple Paintball
+weight: 2
 tags: ["Spigot API", "Java", "Maven", "TravisCI", "Git"]
 start_date: 2018-05-01
 end_date : 2020-05-01

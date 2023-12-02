@@ -1,5 +1,6 @@
 ---
 title: Gitlytics
+weight: 1
 tags: ["Python", "Flask", "React", "PostgreSQL", "Docker"]
 start_date: 2020-06-01
 end_date : 
