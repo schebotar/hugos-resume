@@ -5,12 +5,12 @@
         {{ range sort (.Pages) "Params.end_date" "desc" }}
         <tr>
             <td><strong>{{ .Title }}</strong></td>
-            <td style="text-align: right;">{{ with .Params.location}}{{ . }}{{ end }}</td>
+            <td class="align-right">{{ with .Params.location}}{{ . }}{{ end }}</td>
         </tr>
         <tr>
             <td><em>{{ with .Params.degree}}{{ . }}{{ end }}</em>
             </td>
-            <td style="text-align: right;"><em>
+            <td class="align-right"><em>
                     {{ with .Params.start_date }}{{ time.Format "Jan 2006" . }}{{ end }} –
                     {{ with .Params.end_date }}{{ time.Format "Jan 2006" . }}{{ else }}{{ "Present" }}{{ end }}</em>
             </td>

@@ -5,14 +5,14 @@
     <tbody>
         <tr>
             <td><strong>{{ .Title }}</strong></td>
-            <td style="text-align: right;">
+            <td class="align-right">
                 {{ with .Params.start_date }}{{ time.Format "Jan 2006" . }}{{ end }} – 
                 {{ with .Params.end_date }}{{ time.Format "Jan 2006" . }}{{ else }}{{ "Present" }}{{ end }}
             </td>
         </tr>
         <tr>
             <td><em>{{with .Params.workplace}}{{ . }}{{ end }}</em></td>
-            <td style="text-align: right;"><em>{{ with .Params.location}}{{ . }}{{ end }}</em></td>
+            <td class="align-right"><em>{{ with .Params.location}}{{ . }}{{ end }}</em></td>
         </tr>
     </tbody>
 </table>
