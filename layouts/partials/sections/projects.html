@@ -8,8 +8,21 @@
                 <em>{{ range $i, $e := .Params.tags -}}{{- if $i -}}, {{ end -}}{{ . }}{{- end -}}</em>
             </td>
             <td class="align-right">
-                {{ with .Params.start_date }}{{ time.Format "Jan 2006" . }}{{ end }} – 
-                {{ with .Params.end_date }}{{ time.Format "Jan 2006" . }}{{ else }}{{ "Present" }}{{ end }}
+                {{ with .Params.start_date }}
+                    {{ if le ( len (time.Format "January" .)) 4}}
+                        {{ time.Format "January 2006" . }}
+                    {{ else }}
+                        {{ time.Format "Jan. 2006" . }}
+                    {{ end }}
+                {{ end }} –
+                {{ with .Params.end_date }}
+                    {{ if le ( len (time.Format "January" .)) 4}}
+                        {{ time.Format "January 2006" . }}
+                    {{ else }}
+                        {{ time.Format "Jan. 2006" . }}
+                    {{ end }}
+                {{ else }}{{ "Present" }}
+                {{ end }}
             </td>
         </tr>
     </tbody>
