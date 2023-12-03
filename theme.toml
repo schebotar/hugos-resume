@@ -1,13 +1,10 @@
-# theme.toml template for a Hugo theme
-# See https://github.com/gohugoio/hugoThemes#themetoml for an example
-
 name = "Hugo's Resume"
 license = "MIT"
-licenselink = "https://github.com/chebser/hugos-resume/blob/master/LICENSE"
+licenselink = "https://github.com/schebotar/hugos-resume/blob/master/LICENSE"
 description = "Hugo resume theme inspired by Jake's resume"
-homepage = "https://github.com/chebser/hugos-resume/"
-tags = [resume]
-features = []
+homepage = "https://github.com/schebotar/hugos-resume/"
+demosite = "https://schebotar.github.io/hugos-resume/"
+tags = ["resume", "minimal"]
 min_version = "0.41.0"
 
 [author]
