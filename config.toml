@@ -5,6 +5,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "category", "sitemap", "RSS", "404",
 
 [Params]
     Name = "Hugo Jobless"
+    Description = "Hugo theme to build resume page in style of Jake's resume"
     Phone = "123-456-7890"
     EMail = "jake@su.edu"
     LinkedIn = "linkedin.com/in/jake"
