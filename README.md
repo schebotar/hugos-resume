@@ -6,7 +6,10 @@ Hugo theme to create resume in style of [Jake's Resume](https://github.com/jakeg
 Run
 ```bash
 git clone https://github.com/schebotar/hugos-resume
-docker run --rm -it -v "$(PWD):/src/hugos-resume" -p 1313:1313 klakegg/hugo:alpine server -s /src/hugos-resume/exampleSite --themesDir /src
+docker run --rm -it -v "$(PWD):/src/hugos-resume" -p 1313:1313 \ 
+klakegg/hugo:alpine server \
+-s /src/hugos-resume/exampleSite \
+--themesDir /src
 ```
 And open ```localhost:1313```
 
