@@ -5,7 +5,7 @@
     <tbody>
         <tr>
             <td><strong>{{ .Title }} </strong><span>|</span>
-                <em>{{ range $i, $e := .Params.tags -}}{{- if $i -}}, {{ end -}}{{ . }}{{- end -}}</em>
+                <em class="subtitle">{{ range $i, $e := .Params.tags -}}{{- if $i -}}, {{ end -}}{{ . }}{{- end -}}</em>
             </td>
             <td class="align-right">
                 {{ with .Params.start_date }}
@@ -21,7 +21,7 @@
                     {{ else }}
                         {{ time.Format "Jan. 2006" . }}
                     {{ end }}
-                {{ else }}{{ "Present" }}
+                        {{ else }}{{ "Present" }}
                 {{ end }}
             </td>
         </tr>
